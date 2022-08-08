@@ -1,0 +1,32 @@
+name: Build and deploy to pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 代码签出
+      - uses: actions/checkout@v3
+      # 配置 node
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 10
+          cache: npm
+      # 安装 laya 命令行构建工具
+      - name: setup laya
+        run: |
+          npm install -g layaair2-cmd
+      # 进行构建
+      - name: build
+        run: |
+          layaair2-cmd publish -c web
+      # 把构建完的内容推送到 pages 分支
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./release/web
+          publish_branch: pages  # deploying branch
