@@ -14,7 +14,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 10
-          cache: npm
       # 安装 laya 命令行构建工具
       - name: setup laya
         run: |
