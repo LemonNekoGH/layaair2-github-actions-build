@@ -1,0 +1,19 @@
+{
+  "fileconfig.json": "fileconfig-56fede52b1.json",
+  "index.js": "index-86bf2e99ce.js",
+  "js/bundle.js": "js/bundle-75ec4e46b6.js",
+  "libs/min/laya.core.min.js": "libs/min/laya-d656973421.core.min.js",
+  "libs/min/laya.physics.min.js": "libs/min/laya-9f7e23d550.physics.min.js",
+  "libs/min/laya.ui.min.js": "libs/min/laya-320c69ea5d.ui.min.js",
+  "prefab/Bullet.json": "prefab/Bullet-b306c06876.json",
+  "prefab/DropBox.json": "prefab/DropBox-7e8d968664.json",
+  "res/atlas/comp.atlas": "res/atlas/comp-b8fbe2c32e.atlas",
+  "res/atlas/comp.png": "res/atlas/comp-1c66855fc2.png",
+  "res/atlas/test.atlas": "res/atlas/test-e9ecea856b.atlas",
+  "res/atlas/test.png": "res/atlas/test-9a4d5a23eb.png",
+  "sound/destroy.wav": "sound/destroy-f6b9d6d3b1.wav",
+  "sound/hit.wav": "sound/hit-bb6f21bccb.wav",
+  "test/TestAni.ani": "test/TestAni-84f95a7920.ani",
+  "test/TestScene.json": "test/TestScene-8250d361bb.json",
+  "version.json": "version-99914b932b.json"
+}
