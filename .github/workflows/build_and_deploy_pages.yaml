@@ -22,6 +22,7 @@ jobs:
       - name: build
         run: |
           layaair2-cmd publish -c web
+          ls
       # 把构建完的内容推送到 pages 分支
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
